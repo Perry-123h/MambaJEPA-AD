@@ -1,0 +1,173 @@
+{
+  "seed": 42,
+  "variant": "full",
+  "sequence_kind": "ssm",
+  "pretraining_enabled": false,
+  "initial_representation_diagnostics": {
+    "attribute": {
+      "mean_dimension_std": 0.11257594834287826,
+      "effective_rank": 14.406158940735915,
+      "mean_pair_cosine": 0.5277741000131105
+    },
+    "sequence": {
+      "mean_dimension_std": 0.05281612685209083,
+      "effective_rank": 7.368454031915259,
+      "mean_pair_cosine": 0.8855082463298058
+    }
+  },
+  "field_mask_definition": [
+    {
+      "name": "log_amount",
+      "start": 0,
+      "end": 1,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "normalized_step",
+      "start": 1,
+      "end": 2,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "history_count",
+      "start": 2,
+      "end": 3,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "history_mean",
+      "start": 3,
+      "end": 4,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "history_std",
+      "start": 4,
+      "end": 5,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "history_max",
+      "start": 5,
+      "end": 6,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "recency",
+      "start": 6,
+      "end": 7,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "category_repeat",
+      "start": 7,
+      "end": 8,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "age",
+      "start": 8,
+      "end": 17,
+      "replacement": "all-zero vector, distinct from every valid one-hot level"
+    },
+    {
+      "name": "gender",
+      "start": 17,
+      "end": 22,
+      "replacement": "all-zero vector, distinct from every valid one-hot level"
+    },
+    {
+      "name": "category",
+      "start": 22,
+      "end": 38,
+      "replacement": "all-zero vector, distinct from every valid one-hot level"
+    }
+  ],
+  "pretraining": {
+    "seconds": 0.0,
+    "peak_process_rss_MiB": 411.5078125
+  },
+  "pretraining_epochs": [],
+  "supervised_training": {
+    "seconds": 62.36791679999442,
+    "peak_process_rss_MiB": 499.95703125
+  },
+  "supervised_epochs": [
+    {
+      "epoch": 1,
+      "training_loss": 0.5154277144408808,
+      "validation_AUPRC": 0.5869930388377637
+    },
+    {
+      "epoch": 2,
+      "training_loss": 0.12886345659087345,
+      "validation_AUPRC": 0.7430197674801319
+    },
+    {
+      "epoch": 3,
+      "training_loss": 0.07617653824570703,
+      "validation_AUPRC": 0.7852960890333037
+    },
+    {
+      "epoch": 4,
+      "training_loss": 0.06553285459919674,
+      "validation_AUPRC": 0.8123655347987742
+    },
+    {
+      "epoch": 5,
+      "training_loss": 0.06063169377242646,
+      "validation_AUPRC": 0.8304103419331825
+    },
+    {
+      "epoch": 6,
+      "training_loss": 0.05776051086623494,
+      "validation_AUPRC": 0.8345628164757832
+    },
+    {
+      "epoch": 7,
+      "training_loss": 0.05694568675102257,
+      "validation_AUPRC": 0.8367389028043105
+    },
+    {
+      "epoch": 8,
+      "training_loss": 0.05488090117166682,
+      "validation_AUPRC": 0.8404018081942773
+    }
+  ],
+  "best_epoch": 8,
+  "positive_class_weight": 8.717160597860342,
+  "trainable_parameters": 16681,
+  "final_representation_diagnostics": {
+    "attribute": {
+      "mean_dimension_std": 0.07764760566179786,
+      "effective_rank": 14.147315323326414,
+      "mean_pair_cosine": 0.787416120417917
+    },
+    "sequence": {
+      "mean_dimension_std": 0.07625583696516726,
+      "effective_rank": 4.563534166419109,
+      "mean_pair_cosine": 0.7640601657255918
+    }
+  },
+  "inference": {
+    "five_test_pass_seconds": [
+      0.8347265999982483,
+      0.8164535000032629,
+      0.8363671000042814,
+      0.8114714000039385,
+      0.8360832999969716
+    ],
+    "median_seconds": 0.8347265999982483,
+    "peak_process_rss_MiB": 496.92578125,
+    "test_transactions": 133231
+  },
+  "validation_AUPRC": 0.8404018081942773,
+  "validation_selected_F1_threshold": 0.8941245675086975,
+  "test_ROC_AUC": 0.9946834750560442,
+  "test_AUPRC": 0.8272803718015099,
+  "test_F1": 0.7598537180008127,
+  "test_MCC": 0.7691154488416555,
+  "test_FPR": 0.0006525483530741856,
+  "test_precision": 0.9157688540646425,
+  "test_recall": 0.6493055555555556
+}

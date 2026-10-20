@@ -1,0 +1,28 @@
+{
+  "resamples": 2000,
+  "seed": 20260808,
+  "customer_clusters": 4088,
+  "paired_differences": {
+    "XGBoost + MambaJEPA minus XGBoost + supervised SSM": {
+      "point_difference": 0.0010573903364686776,
+      "95_CI": [
+        -0.0008302597013347318,
+        0.0028426623810341054
+      ]
+    },
+    "XGBoost + MambaJEPA minus XGBoost": {
+      "point_difference": 0.005019577834073918,
+      "95_CI": [
+        0.002001219958737818,
+        0.00818895097828857
+      ]
+    },
+    "XGBoost + supervised SSM minus XGBoost": {
+      "point_difference": 0.003962187497605241,
+      "95_CI": [
+        0.0009377970160290905,
+        0.0070092907128308695
+      ]
+    }
+  }
+}

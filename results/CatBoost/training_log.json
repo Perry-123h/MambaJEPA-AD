@@ -1,0 +1,43 @@
+{
+  "configuration": {
+    "iterations": 400,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3.0,
+    "loss_function": "Logloss",
+    "class_weights": [
+      1.0,
+      8.717160597860342
+    ],
+    "thread_count": 4,
+    "random_seed": 42,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "tuning_budget": "one prespecified configuration; no hyperparameter search",
+  "training": {
+    "seconds": 13.780866900000547,
+    "peak_process_rss_MiB": 844.625
+  },
+  "inference": {
+    "five_test_pass_seconds": [
+      0.04053339999518357,
+      0.04094059999624733,
+      0.03716209999402054,
+      0.037819600001967046,
+      0.03822819999913918
+    ],
+    "median_seconds": 0.03822819999913918,
+    "peak_process_rss_MiB": 750.734375,
+    "test_transactions": 133231
+  },
+  "validation_AUPRC": 0.8589383955057479,
+  "validation_selected_F1_threshold": 0.7490713870662356,
+  "test_ROC_AUC": 0.9951612701803108,
+  "test_AUPRC": 0.844885203209334,
+  "test_F1": 0.7672727272727272,
+  "test_MCC": 0.7657252997367313,
+  "test_FPR": 0.0019348817445804343,
+  "test_precision": 0.8053435114503816,
+  "test_recall": 0.7326388888888888
+}

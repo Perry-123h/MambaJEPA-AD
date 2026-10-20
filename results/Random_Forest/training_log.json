@@ -1,0 +1,37 @@
+{
+  "configuration": {
+    "n_estimators": 300,
+    "max_depth": 16,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "n_jobs": 4,
+    "random_state": 42
+  },
+  "tuning_budget": "one prespecified configuration; no hyperparameter search",
+  "training": {
+    "seconds": 26.893060700000206,
+    "peak_process_rss_MiB": 847.734375
+  },
+  "inference": {
+    "five_test_pass_seconds": [
+      0.41109549999964656,
+      0.40871920000063255,
+      0.4433415000021341,
+      0.42192330000398215,
+      0.4228561999989324
+    ],
+    "median_seconds": 0.42192330000398215,
+    "peak_process_rss_MiB": 760.50390625,
+    "test_transactions": 133231
+  },
+  "validation_AUPRC": 0.8161171870758603,
+  "validation_selected_F1_threshold": 0.6663982875812382,
+  "test_ROC_AUC": 0.9942656997316458,
+  "test_AUPRC": 0.8070971467005635,
+  "test_F1": 0.7424071991001124,
+  "test_MCC": 0.7422385736931032,
+  "test_FPR": 0.0017983018567276977,
+  "test_precision": 0.8068459657701712,
+  "test_recall": 0.6875
+}

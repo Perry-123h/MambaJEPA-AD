@@ -1,0 +1,173 @@
+{
+  "seed": 42,
+  "variant": "full",
+  "sequence_kind": "transformer",
+  "pretraining_enabled": false,
+  "initial_representation_diagnostics": {
+    "attribute": {
+      "mean_dimension_std": 0.11257594834287826,
+      "effective_rank": 14.406158940735915,
+      "mean_pair_cosine": 0.5277741000131105
+    },
+    "sequence": {
+      "mean_dimension_std": 0.1115345814319544,
+      "effective_rank": 9.15821174706186,
+      "mean_pair_cosine": 0.5246536876396378
+    }
+  },
+  "field_mask_definition": [
+    {
+      "name": "log_amount",
+      "start": 0,
+      "end": 1,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "normalized_step",
+      "start": 1,
+      "end": 2,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "history_count",
+      "start": 2,
+      "end": 3,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "history_mean",
+      "start": 3,
+      "end": 4,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "history_std",
+      "start": 4,
+      "end": 5,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "history_max",
+      "start": 5,
+      "end": 6,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "recency",
+      "start": 6,
+      "end": 7,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "category_repeat",
+      "start": 7,
+      "end": 8,
+      "replacement": "0 after train-standardization"
+    },
+    {
+      "name": "age",
+      "start": 8,
+      "end": 17,
+      "replacement": "all-zero vector, distinct from every valid one-hot level"
+    },
+    {
+      "name": "gender",
+      "start": 17,
+      "end": 22,
+      "replacement": "all-zero vector, distinct from every valid one-hot level"
+    },
+    {
+      "name": "category",
+      "start": 22,
+      "end": 38,
+      "replacement": "all-zero vector, distinct from every valid one-hot level"
+    }
+  ],
+  "pretraining": {
+    "seconds": 0.0,
+    "peak_process_rss_MiB": 782.35546875
+  },
+  "pretraining_epochs": [],
+  "supervised_training": {
+    "seconds": 108.6842056999958,
+    "peak_process_rss_MiB": 1098.9765625
+  },
+  "supervised_epochs": [
+    {
+      "epoch": 1,
+      "training_loss": 0.47035345217076746,
+      "validation_AUPRC": 0.6342676784573217
+    },
+    {
+      "epoch": 2,
+      "training_loss": 0.12567940863167368,
+      "validation_AUPRC": 0.7722503427679486
+    },
+    {
+      "epoch": 3,
+      "training_loss": 0.07386984694294813,
+      "validation_AUPRC": 0.8039227761806814
+    },
+    {
+      "epoch": 4,
+      "training_loss": 0.06352553116839106,
+      "validation_AUPRC": 0.8213825024474137
+    },
+    {
+      "epoch": 5,
+      "training_loss": 0.05878515296229502,
+      "validation_AUPRC": 0.8375044737069287
+    },
+    {
+      "epoch": 6,
+      "training_loss": 0.05602830048741364,
+      "validation_AUPRC": 0.8411170375317742
+    },
+    {
+      "epoch": 7,
+      "training_loss": 0.05531887937246299,
+      "validation_AUPRC": 0.8448085576399974
+    },
+    {
+      "epoch": 8,
+      "training_loss": 0.05324503543173394,
+      "validation_AUPRC": 0.8464477835527427
+    }
+  ],
+  "best_epoch": 8,
+  "positive_class_weight": 8.717160597860342,
+  "trainable_parameters": 19393,
+  "final_representation_diagnostics": {
+    "attribute": {
+      "mean_dimension_std": 0.07527713452219403,
+      "effective_rank": 14.467208309246477,
+      "mean_pair_cosine": 0.8028204735940084
+    },
+    "sequence": {
+      "mean_dimension_std": 0.08910502119749017,
+      "effective_rank": 5.609574841819528,
+      "mean_pair_cosine": 0.7038342213326335
+    }
+  },
+  "inference": {
+    "five_test_pass_seconds": [
+      1.2694523999962257,
+      1.2964881000007153,
+      1.2444427000009455,
+      1.2596033000008902,
+      1.2209967999951914
+    ],
+    "median_seconds": 1.2596033000008902,
+    "peak_process_rss_MiB": 1084.6328125,
+    "test_transactions": 133231
+  },
+  "validation_AUPRC": 0.8464477835527427,
+  "validation_selected_F1_threshold": 0.8757772445678711,
+  "test_ROC_AUC": 0.9949020344923233,
+  "test_AUPRC": 0.8312943129827146,
+  "test_F1": 0.7668759811616954,
+  "test_MCC": 0.7713657825336196,
+  "test_FPR": 0.000993998072706027,
+  "test_precision": 0.881768953068592,
+  "test_recall": 0.6784722222222223
+}

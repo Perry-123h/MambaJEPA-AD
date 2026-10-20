@@ -1,0 +1,42 @@
+{
+  "configuration": {
+    "n_estimators": 400,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "learning_rate": 0.05,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "min_child_samples": 20,
+    "reg_lambda": 0.0,
+    "scale_pos_weight": 8.717160597860342,
+    "n_jobs": 4,
+    "random_state": 42,
+    "verbosity": -1
+  },
+  "tuning_budget": "one prespecified configuration; no hyperparameter search",
+  "training": {
+    "seconds": 2.038673299997754,
+    "peak_process_rss_MiB": 754.76953125
+  },
+  "inference": {
+    "five_test_pass_seconds": [
+      0.35865329999796813,
+      0.38770430000295164,
+      0.3883574999999837,
+      0.407932999994955,
+      0.3992147999961162
+    ],
+    "median_seconds": 0.3883574999999837,
+    "peak_process_rss_MiB": 697.4140625,
+    "test_transactions": 133231
+  },
+  "validation_AUPRC": 0.8474587325574752,
+  "validation_selected_F1_threshold": 0.7450472099633882,
+  "test_ROC_AUC": 0.9950800388704675,
+  "test_AUPRC": 0.8389108336780827,
+  "test_F1": 0.7569659442724458,
+  "test_MCC": 0.759715964284425,
+  "test_FPR": 0.0012595700768641257,
+  "test_precision": 0.8548951048951049,
+  "test_recall": 0.6791666666666667
+}

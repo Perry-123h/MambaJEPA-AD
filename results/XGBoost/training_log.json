@@ -1,0 +1,43 @@
+{
+  "configuration": {
+    "n_estimators": 400,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 1,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.0,
+    "scale_pos_weight": 8.717160597860342,
+    "tree_method": "hist",
+    "n_jobs": 4,
+    "random_state": 42,
+    "eval_metric": "logloss"
+  },
+  "tuning_budget": "one prespecified configuration; no hyperparameter search",
+  "training": {
+    "seconds": 5.178999800002202,
+    "peak_process_rss_MiB": 756.82421875
+  },
+  "inference": {
+    "five_test_pass_seconds": [
+      0.2024678000016138,
+      0.1840684000053443,
+      0.19540520000009565,
+      0.1789788000023691,
+      0.1793450999975903
+    ],
+    "median_seconds": 0.1840684000053443,
+    "peak_process_rss_MiB": 693.98828125,
+    "test_transactions": 133231
+  },
+  "validation_AUPRC": 0.8514166638055028,
+  "validation_selected_F1_threshold": 0.7719841003417969,
+  "test_ROC_AUC": 0.9952618503075998,
+  "test_AUPRC": 0.8420519080683996,
+  "test_F1": 0.7680835197613721,
+  "test_MCC": 0.767876526389552,
+  "test_FPR": 0.0016086075680433413,
+  "test_precision": 0.8293075684380032,
+  "test_recall": 0.7152777777777778
+}
